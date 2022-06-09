@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/process" method="post">
+        <div>
+            First Name:* <input type="text" name="First_Name">
+        </div>
+        <div>
+            Last Name:* <input type="text" name="Last_Name">
+        </div>
+        <div>
+            Email Address:* <input type="email" name="Email_Address">
+        </div>
+        <div>
+            Password:* <input type="password" name="Password">
+        </div>
+        <div>
+            Confirm Password:* <input type="password" name="Password">
+        </div>
+        <div>
+            Birthday: <input type="date" name="Birthday">
+        </div>
+        <div>Gender Identity:
+            <div>
+            <input type="radio" name="gender_identity" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender_identity" value="Female" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender_identity" value="Non-binary" id="Non-binary">
+            <label for="Non-binary">Non-binary</label>
+            <input type="radio" name="gender_identity" value="I prefer not to answer" id="I_prefer_not_to_answer">
+            <label for="I_prefer_not_to_answer">I prefer not to answer</label>
+            </div>
+        </div>
+        <div>A short description about myself:
+            <div>
+                <textarea name="comment" cols="20" rows="3"></textarea>
+            </div>
+        </div>
+        <div>Favorite Language:
+            <select name="language">
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Ruby</option>
+                <option>SQL</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">Yes, I would like 
+            to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account" >
+        </div>
+        <div>
+            *Indicates a required field
+        </div>
+    </form>
+</body>
+</html>
