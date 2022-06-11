@@ -1,0 +1,17 @@
+h1 {
+    background-color: #000000;
+    color: #40e0d0;
+    font-style: bold;
+}
+h2 {
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
+h3 {
+    text-decoration: underline;
+    background-color: #93aae9;
+    color: #000000;
+    text-align: right;
+}
