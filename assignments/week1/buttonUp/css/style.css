@@ -1,0 +1,28 @@
+.search {
+    color: #2dacac;
+    background-color: lightgray;
+    border: 1px solid teal;
+    border-radius: 25px;
+    width: 125px;
+    height: 30px;
+    margin: 40px 40px 20px ;
+}
+.plus {
+    color: white;
+    background-color: #2dacac;
+    border: 1px solid #2dacac;
+    border-radius: 50%;
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+}
+.create {
+    background-color: #0000ff;
+    color: #ffffff;
+    margin-left: 40px;
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+}
