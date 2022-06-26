@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <header>
+        <div class="headercontent">
+            <h1>DojoWeather</h1>
+            <nav>
+                <a href="#" onclick="cityalert()">Burbank</a>
+                <a href="#" onclick="cityalert()">Chicago</a>
+                <a href="#" onclick="cityalert()">Dallas</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <h2>San Jose</h2>
+            <div>
+                <p>show temperature in</p>
+                <form action="/process" method="post">
+                    <select name="tempscale" id="scale" onchange="tempconvert()">
+                        <option value="celcius">°C</option>
+                        <option value="fahrenheit">°F</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="days">
+            <div class="daily">
+                <h3>Today</h3>
+                <img src="./img/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="twotemps">
+                    <p class="red"><span class="num">24</span>°</p>
+                    <p class="blue"><span class="num">18</span>°</p>
+                </div>
+            </div>
+            <div class="daily">
+                <h3>Tomorrow</h3>
+                <img src="./img/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="twotemps">
+                    <p class="red"><span class="num">27</span>°</p>
+                    <p class="blue"><span class="num">9</span>°</p>
+                </div>
+            </div>
+            <div class="daily">
+                <h3>Friday</h3>
+                <img src="./img/some_clouds.png" alt="cloud">
+                <p>some clouds</p>
+                <div class="twotemps">
+                    <p class="red"><span class="num">21</span>°</p>
+                    <p class="blue"><span class="num">16</span>°</p>
+                </div>
+            </div>
+            <div class="daily">
+                <h3>Saturday</h3>
+                <img src="./img/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="twotemps">
+                    <p class="red"><span class="num">26</span>°</p>
+                    <p class="blue"><span class="num">21</span>°</p>
+                </div>
+            </div>
+        </div>
+        <div class="cookiebar">
+            <img src="./img/cookie.png" alt="cookie" id="cookiepic">
+            <p class="cookietext"><span class="cookietime">Stop! Cookie time</span><br>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+            <button onclick="removecookie(this)">I Accept</button>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
